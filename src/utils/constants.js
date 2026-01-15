@@ -1,0 +1,37 @@
+module.exports = {
+  // HTTP Status Codes
+  HTTP_STATUS: {
+    OK: 200,
+    CREATED: 201,
+    BAD_REQUEST: 400,
+    UNAUTHORIZED: 401,
+    FORBIDDEN: 403,
+    NOT_FOUND: 404,
+    TOO_MANY_REQUESTS: 429,
+    INTERNAL_SERVER_ERROR: 500,
+    SERVICE_UNAVAILABLE: 503
+  },
+  
+  // Error Codes
+  ERROR_CODES: {
+    RATE_LIMIT_EXCEEDED: 'RATE_LIMIT_EXCEEDED',
+    INVALID_TIER: 'INVALID_TIER',
+    INVALID_ENDPOINT: 'INVALID_ENDPOINT',
+    REDIS_ERROR: 'REDIS_ERROR',
+    INTERNAL_ERROR: 'INTERNAL_ERROR'
+  },
+  
+  // Cache TTLs
+  CACHE_TTL: {
+    SHORT: 60,        // 1 minute
+    MEDIUM: 300,      // 5 minutes
+    LONG: 3600        // 1 hour
+  },
+  
+  // Limits
+  LIMITS: {
+    MAX_REQUEST_SIZE: '10mb',
+    MAX_CACHE_SIZE: 10000,
+    MAX_LOG_ENTRIES: 1000
+  }
+};
