@@ -1,4 +1,4 @@
-# Smart Rate Limiting Service – README & Business Context
+# Smart Rate Limiting Service
 
 ## 1. Overview
 
@@ -10,7 +10,7 @@ The **Smart Rate Limiting Service** protects an e-commerce platform from abuse, 
 * Protect sensitive endpoints (`/checkout`, `/profile`) but currently dummpy auth.
 * Allow tiered access (Free, Premium, Enterprise)
 * Adapt limits based on geography and user behavior
-* Collect analytics for monitoring and fraud detection
+* Collect analytics for logs and fraud detection
 
 ---
 
@@ -249,7 +249,7 @@ curl -X POST http://localhost:3000/api/checkout \
 * Fallback cache for Redis failures (local LRU)
 * Tiered, burstable, geo-adaptive rate limits
 * Slow-start and adaptive behavior for new users
-* Monitoring: Prometheus/Grafana metrics
+* Monitoring: Added file based logs
 * Modular & extensible; easy to add new endpoints, tiers, regions
 
 ---
