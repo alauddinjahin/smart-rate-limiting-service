@@ -164,10 +164,7 @@ NODE_ENV=development
 
 ```bash
 # Run all tests
-npm test
-
-# Run specific test file
-npm test -- rateLimiter.test.js
+npm run test
 ```
 
 **Expected Results:**
