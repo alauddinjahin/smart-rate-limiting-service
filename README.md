@@ -7,7 +7,7 @@ The **Smart Rate Limiting Service** protects an e-commerce platform from abuse, 
 **Key Goals:**
 
 * Prevent system overload from high traffic bursts
-* Protect sensitive endpoints (`/checkout`, `/profile`)
+* Protect sensitive endpoints (`/checkout`, `/profile`) but currently dummpy auth.
 * Allow tiered access (Free, Premium, Enterprise)
 * Adapt limits based on geography and user behavior
 * Collect analytics for monitoring and fraud detection
@@ -86,7 +86,7 @@ npm start
 npm run test
 ```
 
-### Environment Variables
+### Environment Variables 
 
 ```bash
 REDIS_HOST=localhost
@@ -195,15 +195,11 @@ curl -X GET http://localhost:3000/test/burst
 
 **Search (Free Tier, US):**
 ```bash
-curl -X GET http://localhost:3000/api/search \
--H "Authorization: Bearer <token>" \
--H "X-Country-Code: US"
+curl -X GET http://localhost:3000/api/search 
 ```
 **Profile**
 ```bash
-curl -X GET http://localhost:3000/api/profile \
--H "Authorization: Bearer <token>" \
--H "X-Country-Code: US"
+curl -X GET http://localhost:3000/api/profile 
 ```
 
 **Checkout (Cost = 5 tokens):**
