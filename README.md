@@ -274,7 +274,7 @@ curl -X POST http://localhost:3000/api/checkout \
 
 ## 9. Summary
 
-* ✅ All interview requirements fulfilled from my side but have minors issues due to time limit 
+* ✅ All requirements fulfilled from my side but have minors issues due to time limit 
 * ✅ All tasks implemented & test scenarios pass
 * ✅ Bonus points achieved: request costing, adaptive limits, jitter/backoff
 * ✅ Production-grade, enterprise-ready architecture setup
